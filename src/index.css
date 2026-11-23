@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Chakra Petch", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #132334;
+    color: #F1F6FA;
+    font-family: var(--font-sans);
+    letter-spacing: 0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Blueprint drafting-grid backdrop matching the uploaded Bataan asset sheets */
+.bp-grid-bg {
+  background-color: #142435;
+  background-image:
+    linear-gradient(to right, rgba(122, 160, 188, 0.11) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(122, 160, 188, 0.11) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Primary steel-blue pixel-framed container */
+.bp-panel {
+  background-color: #1D3348;
+  border: 2px solid #7FA4BE;
+  box-shadow:
+    0 0 0 2px #0B1520,
+    inset 0 0 0 2px #132334;
+}
+
+/* Muted slate-blue showcase card matching asset sheet frames */
+.bp-card {
+  background-color: #36566E;
+  border: 2px solid #7FA4BE;
+  box-shadow:
+    0 0 0 1px #0B1520,
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+/* Deep recessed header plate inside panels */
+.bp-header-plate {
+  background-color: #152739;
+  border: 2px solid #7FA4BE;
+  box-shadow: 0 0 0 1px #0B1520;
+}
+
+/* Crisp 16-bit Neo Geo Arcade Beat-Em-Up HUD frame & gauges */
+.arcade-panel {
+  background: linear-gradient(180deg, #243F59 0%, #172A3D 58%, #122130 100%);
+  border: 2px solid #8BB3CF;
+  box-shadow:
+    0 0 0 2px #09121B,
+    inset 0 2px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -2px 0 rgba(7, 14, 22, 0.72),
+    0 4px 0 rgba(8, 16, 25, 0.78);
+}
+
+.arcade-gold-plate {
+  background: linear-gradient(180deg, #2D4A66 0%, #1A3044 100%);
+  border: 2px solid #F4C542;
+  box-shadow:
+    0 0 0 2px #09121B,
+    inset 0 2px 0 rgba(255, 240, 179, 0.35),
+    inset 0 -2px 0 rgba(11, 21, 32, 0.75);
+}
+
+.arcade-segments {
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent 0px,
+    transparent 14px,
+    rgba(9, 18, 27, 0.58) 14px,
+    rgba(9, 18, 27, 0.58) 16px
+  );
+}
+
+.pixel-canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Custom crisp steel-blue scrollbar inside modals */
+.bp-scroll::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.bp-scroll::-webkit-scrollbar-track {
+  background: #122130;
+}
+
+.bp-scroll::-webkit-scrollbar-thumb {
+  background: #4E728D;
+  border: 1px solid #0B1520;
+}
+
+.bp-scroll::-webkit-scrollbar-thumb:hover {
+  background: #7FA4BE;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": "4.0-perfected",
+  "frame_size": "256x256",
+  "ground_baseline_y": 242,
+  "fixes": [
+    "100% native hand-drawn heads and full-volume spiky hair on ALL 25 outfit poses (idle, run, attack, slingshot, bike) \u2014 zero pasted heads, zero floating heads, zero bald spots",
+    "Complete 3-hairstyle coverage (hair_defender, hair_midnight, hair_sunlit) across all 5 outfits x 5 poses (75 full sprites) + 3 full-volume standalone hairpieces",
+    "100% transparent hollow-spoked bicycle wheels across all 5 bike outfits (zero white fill inside wheels)",
+    "Complete RPG_GEAR compatibility: headgear, back gear, weapons, accessories, ammo, parallax maps, and boss/enemy atlases"
+  ]
+}

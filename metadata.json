@@ -1,0 +1,8 @@
+{
+  "name": "Lakbay Bataan",
+  "description": "A Castlevania noir 2D gothic action RPG set across Bataan's towns, featuring Kael's homestead chronicle, buyable safe houses with decor upgrades, and Tropa companion allies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
